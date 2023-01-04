@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PerformanceEfficiencySuite.GUI.WinUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PerformanceEfficiencySuite.GUI.WinUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
