@@ -8,6 +8,7 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using PerformanceEfficiencySuite.GUI.WinUI.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,7 +29,9 @@ namespace PerformanceEfficiencySuite.GUI.WinUI
 	{
 		public MainWindow()
 		{
+			//HardwareMonitor _hardwareMonitor = new HardwareMonitor();
 			this.InitializeComponent();
+			//txtPackagePower.Text = _hardwareMonitor.CurrentPackagePower.ToString();
 		}
 
 	}

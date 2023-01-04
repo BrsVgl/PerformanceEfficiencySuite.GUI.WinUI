@@ -10,11 +10,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-	<Grid>
+	<Grid BorderThickness="1" BorderBrush="Green">
 		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="*"/>
 		</Grid.RowDefinitions>
-		
+		<Grid BorderThickness="1" BorderBrush="Gold" Margin="12" Grid.Row="0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<TextBlock Grid.Column="0" Text="Package Power (W)" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+			<TextBlock x:Name="txtPackagePower" Grid.Column="1" Text="12,34" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+		</Grid>
 	</Grid>
 </Window>
